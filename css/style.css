@@ -89,21 +89,22 @@ header {
 main {
     border: 1px red solid;
 }
+.title {
+    padding-top: 50px;
+}
 .port-img {
     height: 240px;
     width: 350px
 }
 .primary-content {
-    border: 1px red solid;
+    padding: 40px 20px;
 }
 .secondary-content {
-    
-    border: 1px red solid;
+    padding: 40px 20px;
 }
 .col {
     float: left;
     width: 33.33%;
-    border: 1px red solid;
 }
 
 /* Footer */
