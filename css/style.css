@@ -50,9 +50,6 @@ ul {
  Main Styles *******
 ****************/
 /* Header */
-header {
-    border: 1px solid red;
-}
 .my-name {
     float: left;
 }
@@ -64,6 +61,7 @@ header {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    width: 95%;
     overflow: hidden;
     display: block;
     margin: 40px 0;
@@ -79,36 +77,58 @@ header {
 .prof-img {    
     margin: 40px 0;
     margin-left: 120px;
-    height: 200px;
-    max-width: 40%;
+    height: 80%;
+    max-width: 60%;
     border-radius: 50%;
     border: 4px solid rgb(15, 15, 15);
 }
+.box-prof-img {
+    float: right;
+    height: 250px;
+    width: 405px;
+    border-bottom: 8px solid #353434;
+    border-radius: 4px;
+    background: linear-gradient(to left, #d86234, 60%, #9198e5); 
+    transition: all 1s;   
+}
+.box-prof-img:hover{
+    border-color:rgb(10, 219, 80);
+}
 
 /* Main */
-main {
-    border: 1px red solid;
-}
 .title {
     padding-top: 50px;
 }
 .port-img {
-    height: 240px;
-    width: 350px
+    height: 60%;
+    width: 90%;
 }
-.primary-content {
+.portfolio-content {
     padding: 40px 20px;
 }
-.secondary-content {
-    padding: 40px 20px;
-}
+
 .col {
     float: left;
     width: 33.33%;
 }
+/* Contact Main Area */
+
+.contact-container {
+    text-align: center;
+    width: 450px;
+    margin: 0 auto;
+}
+.box-contact {
+    padding: 10px 5px;
+}
+.contact-info {
+    color: #9198e5;
+    font-weight: 500px;
+    margin-left: 10px;
+}
 
 /* Footer */
-/*********************
+/**************************
  Layout Containers *******
 ****************/
 .head-container {
@@ -121,6 +141,11 @@ main {
     margin: 0 auto;
     background: #fff;
 }
+.footer-container {
+    height: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
 .group:after {
     content: "";
     display: table;
@@ -131,10 +156,62 @@ main {
     
 }
 
-@media screen and (max-width: 768) {
-    
+@media screen and (min-width: 768px) and (max-width:1019px) {
+    .my-name {
+        font-size: 20px;
+        text-align: center;
+        display: block;
+        float: none;
+    }
+    .nav-list {
+        font-size: 33px;
+        width: 70%;
+        margin: 0 auto;
+    }
+    .prof-img {
+        width: 95%;
+    }
+    .my-intro,
+    .box-prof-img {
+        width: 40%;
+        margin: 0;
+        padding: 0;
+    }
+    .my-intro {
+        margin-left: 30px;
+    }
+    .prof-img {
+        margin: 30px 60px 0;
+    }       
+    /* Main */
+    .portfolio {
+        width: 90%;
+    }
+    .col {
+        width: 50%;
+    }
+    .article-box {
+        margin: 0 auto;
+        font-size: 13px;
+        width: 80%;
+        padding: 20px 0;
+    }
+    /* Footer */
+    .my-name {
+        float: left;
+    }    
 }
 
-@media screen and (max-width: 1020) {
-    
+@media screen and (min-width: 1020px) and (max-width: 1400px) {       
+    .prof-info {
+        width: 95%;
+    }
+
+    .my-intro {
+        font-size: 1.1em;
+        width: 400px;
+        margin-left: 70px;
+        padding-left: 20px;
+    }
+      
 }
